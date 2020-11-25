@@ -9,13 +9,13 @@ Users on macOS 10.13 or earlier needs to download the [Swift runtime support lib
 ## Install
 
 ```
-$ npm install active-win
+$ npm install active-win-with-url
 ```
 
 ## Usage
 
 ```js
-const activeWin = require('active-win');
+const activeWin = require('active-win-with-url');
 
 (async () => {
 	console.log(await activeWin());
@@ -86,3 +86,7 @@ It works on macOS, Linux, and Windows 7+.
 
 - [Sindre Sorhus](https://github.com/sindresorhus)
 - [Sebastián Ramírez](https://github.com/tiangolo)
+
+
+## dll include
+https://stackoverflow.com/questions/56462501/include-dll-file-in-electron-builder
