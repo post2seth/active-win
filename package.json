@@ -1,6 +1,6 @@
 {
   "name": "active-win-with-url",
-  "version": "1.0.4",
+  "version": "1.0.5",
 	"description": "Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.",
   "main": "index.js",
   "directories": {
@@ -15,8 +15,7 @@
 		"index.js",
 		"index.d.ts",
 		"lib",
-		"main",
-		"BrowserURLs.dll"
+		"main"
 	],
   "repository": {
     "type": "git",
