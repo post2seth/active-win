@@ -1,10 +1,10 @@
 {
   "name": "active-win-with-url",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+	"lib": "lib"
   },
   "scripts": {
     "build": "cross-os make",
@@ -20,22 +20,22 @@
     "main"
   ],
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/post2seth/active-win.git"
+	"type": "git",
+	"url": "git+https://github.com/post2seth/active-win.git"
   },
   "keywords": [
-    "active",
-    "window",
-    "title",
-    "url"
+	"active",
+	"window",
+	"title",
+	"url"
   ],
   "author": "Gaurav",
   "engines": {
-    "node": ">=8"
+	"node": ">=8"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/post2seth/active-win/issues"
+	"url": "https://github.com/post2seth/active-win/issues"
   },
   "homepage": "https://github.com/post2seth/active-win#readme",
   "devDependencies": {
