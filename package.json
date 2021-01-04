@@ -1,24 +1,24 @@
 {
   "name": "active-win-with-url",
-  "version": "1.0.5",
-	"description": "Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.",
+  "version": "1.0.8",
+  "description": "Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "swift build --configuration=release && mv .build/release/active-win main"
-    "prepublishOnly": "npm run build"
-
-
+    "build": "cross-os make",
+    "make": {
+      "darwin": "swift build --configuration=release && mv .build/release/active-win main"
+    },
+    "prepublishOnly": "cross-os make"
   },
   "files": [
-		"index.js",
-		"index.d.ts",
-		"lib",
-		"main"
-	],
+    "index.js",
+    "index.d.ts",
+    "lib",
+    "main"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/post2seth/active-win.git"
@@ -31,22 +31,23 @@
   ],
   "author": "Gaurav",
   "engines": {
-		"node": ">=8"
-	},
+    "node": ">=8"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/post2seth/active-win/issues"
   },
   "homepage": "https://github.com/post2seth/active-win#readme",
   "devDependencies": {
-		"ava": "^2.4.0",
-		"tsd": "^0.10.0",
-		"xo": "^0.25.3"
-	},
-	"optionalDependencies": {
-		"ffi-napi": "^2.4.5",
-		"ref-napi": "^1.4.2",
-		"ref-wchar-napi": "^1.0.2",
-		"ref-struct-napi": "^1.1.0"
-	}
+    "ava": "^2.4.0",
+    "cross-os": "^1.3.0",
+    "tsd": "^0.10.0",
+    "xo": "^0.25.3"
+  },
+  "optionalDependencies": {
+    "ffi-napi": "^2.4.5",
+    "ref-napi": "^1.4.2",
+    "ref-wchar-napi": "^1.0.2",
+    "ref-struct-napi": "^1.1.0"
+  }
 }
